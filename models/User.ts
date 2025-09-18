@@ -1,19 +1,32 @@
-import mongoose, { Schema, model, models } from "mongoose";
+import mongoose, { Schema, Document, models } from 'mongoose';
 
-const UserSchema = new Schema(
-  {
-    name: { type: String, required: true },
-    email: { type: String, required: true, unique: true },
-    password: { type: String, required: true },
-    preferences: {
-      destination: String,
-      travelType: String,
-      budget: String,
-      duration: String,
-    },
+export interface IUser extends Document {
+  clerkId: string;
+  email?: string;
+  username?: string;
+  imageUrl?: string;
+  preferences?: {
+    destination: string;
+    travelType: string;
+    budget: string;
+    duration: string;
+  };
+}
+
+const UserSchema: Schema = new Schema({
+  clerkId: { type: String, required: true, unique: true },
+  // Use a sparse index: email must be unique *if it exists*, but multiple nulls are allowed.
+  email: { type: String, unique: true, sparse: true },
+  username: { type: String },
+  imageUrl: { type: String },
+  preferences: {
+    destination: { type: String },
+    travelType: { type: String },
+    budget: { type: String },
+    duration: { type: String },
   },
-  { timestamps: true }
-);
+}, { timestamps: true });
 
-const User = models.User || model("User", UserSchema);
+const User = models.User || mongoose.model<IUser>('User', UserSchema);
+
 export default User;
