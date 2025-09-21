@@ -16,19 +16,19 @@ const getDestinationsByMood = (mood: string, budget: number): Destination[] => {
     adventurous: [
       {
         id: '1',
-        name: 'Patagonia, Chile',
-        description: 'Epic hiking trails, glaciers, and rugged landscapes perfect for adventure seekers',
+        name: 'Goa, India',
+        description: 'Famous for its beaches, vibrant nightlife, Portuguese heritage, and laid-back atmosphere',
         image: 'https://images.pexels.com/photos/417050/pexels-photo-417050.jpeg',
         type: 'unexplored' as const,
-        estimatedCost: 1200
+        estimatedCost: 600
       },
       {
         id: '2',
-        name: 'Queenstown, New Zealand',
-        description: 'Bungee jumping, skydiving, and extreme sports capital of the world',
-        image: 'https://images.pexels.com/photos/1430677/pexels-photo-1430677.jpeg',
+        name: 'Rishikesh, India',
+        description: 'Known as the Yoga Capital of the World, offering spiritual retreats, Ganga Aarti, and adventure sports like river rafting',
+        image: 'https://plus.unsplash.com/premium_photo-1697730398251-40cd8dc57e0b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8cmlzaGlrZXNoJTJDJTIwaW5kaWF8ZW58MHx8MHx8fDA%3D',
         type: 'mainstream' as const,
-        estimatedCost: 1500
+        estimatedCost: 400
       }
     ],
     relaxing: [

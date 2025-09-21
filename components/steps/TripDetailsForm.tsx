@@ -38,6 +38,7 @@ const TripDetailsForm: React.FC<Props> = ({ data, onUpdate, onNext }) => {
       placeholder="End Date"
       type="date"
       />
+      <p style={{ color: 'black' }}>Budget</p>
       <input
       style={{ color: 'black' }}
       value={localData.budget}
