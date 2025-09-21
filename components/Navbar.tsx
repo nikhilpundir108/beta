@@ -18,7 +18,7 @@ export default function Navbar() {
           {/* Left Side: Logo and Navigation Links */}
           <div className="flex items-center">
             <Link href="/" className="text-2xl font-bold text-blue-600">
-              ✈️ Smart Tourism
+              ✈️ Tour Mate
             </Link>
             <div className="hidden md:block ml-10">
               <div className="flex items-baseline space-x-4">
