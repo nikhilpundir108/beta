@@ -20,7 +20,7 @@ async function seed() {
     {
       name: "Jaipur",
       description: "The Pink City, famous for forts and palaces.",
-      image: "https://images.unsplash.com/photo-1603262110263-fb1c768b33c2",
+      image: "https://plus.unsplash.com/premium_photo-1661963054563-ce928e477ff3?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8amFpcHVyfGVufDB8fDB8fHww",
       location: { lat: 26.9124, lng: 75.7873 },
     },
     {
@@ -32,13 +32,13 @@ async function seed() {
     {
       name: "Manali",
       description: "Hill station surrounded by snowy mountains and adventure sports.",
-      image: "https://images.unsplash.com/photo-1604200215234-c6e01f9a3e79",
+      image: "https://images.unsplash.com/photo-1712388430474-ace0c16051e2?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bWFuYWxpfGVufDB8fDB8fHww",
       location: { lat: 32.2396, lng: 77.1887 },
     },
     {
       name: "Varanasi",
       description: "The spiritual capital of India, known for ghats and temples.",
-      image: "https://images.unsplash.com/photo-1586461996100-8e2d80a3a0b0",
+      image: "https://media.istockphoto.com/id/827065008/photo/holy-town-varanasi-and-the-river-ganges.webp?a=1&b=1&s=612x612&w=0&k=20&c=QtEgeqRAUw0e45r54qW9I79H0hxqk0_3klw_B3xD_rY=",
       location: { lat: 25.3176, lng: 82.9739 },
     },
     {
